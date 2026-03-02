@@ -58,9 +58,9 @@ const uploadImage = async (filePath, type) => {
             .insert([{
                 image_name: fileName,
                 true_type: type,
-                predicted_isRejected: predictedAI,
-                riskScore: result.riskScore,
-                hasExif: result.details.metadata.hasExif,
+                predicted_is_rejected: predictedAI,
+                risk_score: result.riskScore,
+                has_exif: result.details.metadata.hasExif,
                 label: result.label
             }]);
 
